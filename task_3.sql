@@ -38,4 +38,4 @@ CREATE TABLE Order_Details(
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE)
 
-DISPLAY DATABASE alx_book_store
+SHOW TABLES
