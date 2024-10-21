@@ -10,5 +10,7 @@ mydb = mysql.connector.connect(
 )
 mycursor=mydb.cursor()
 mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+
+Exception:mysql.connector.Error
 mycursor.close()
 mydb.close()
