@@ -1,6 +1,6 @@
 import mysql.connector
 
-import mysql.connector
+
 
 mydb = mysql.connector.connect(
     host="localhost",
@@ -10,7 +10,8 @@ mydb = mysql.connector.connect(
 )
 mycursor=mydb.cursor()
 mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+print("Database 'alx_book_store' created successfully!")
+mysql.connector.Error("cant connect to database")
 
-Exception:mysql.connector.Error
 mycursor.close()
 mydb.close()
